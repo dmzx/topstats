@@ -1,0 +1,180 @@
+<!-- IF S_TSMVT_ENABLE or S_TSMRT_ENABLE -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%">
+<tr>
+<!-- IF S_TSMVT_ENABLE -->
+<td valign="top"<!-- IF S_TSMRT_ENABLE --> style="padding-right:2px; width:50%;"<!-- ENDIF -->>
+	<div class="forabg">
+		<div class="inner">
+		<ul class="topiclist">
+			<li class="header">
+				<dl>
+					<dt style="width:70%;">{TSMVT_NUMBER} {L_MOST_VIEWED}</dt>
+					<dd class="lastpost" style="width:auto;"><span>{L_VIEWS}</span></dd>
+				</dl>
+			</li>
+		</ul>
+		<ul class="topiclist forums">
+			<!-- BEGIN most_viewed -->
+			<li class="row">
+			<dl>
+				<dt style="width:70%;"><a style="font-size:1.1em; font-weight:bold;" href="{most_viewed.U_FIRST_TOPIC}">{most_viewed.TOPIC_TITLE}</a><br />{L_POST_BY_AUTHOR} <a style="font-weight:bold; color: #{most_viewed.TOPIC_FIRST_POSTER_COLOUR};" href="{most_viewed.USERNAME_FIRST}">{most_viewed.TOPIC_FIRST_POSTER_NAME}</a> {L_POSTED_ON_DATE} {most_viewed.TOPIC_TIME}</dt>
+				<dd class="lastpost" style="width:auto;"><span style="font-size:1.1em;">{most_viewed.TOPIC_VIEWS}</span></dd>
+			</dl>
+			</li>
+			<!-- END most_viewed -->
+		</ul>
+		</div>
+	</div>
+</td>
+<!-- ENDIF -->
+<!-- IF S_TSMRT_ENABLE -->
+<td valign="top"<!-- IF S_TSMVT_ENABLE --> style="padding-left:2px; width:50%;"<!-- ENDIF -->>
+	<div class="forabg">
+		<div class="inner">
+		<ul class="topiclist">
+			<li class="header">
+				<dl>
+					<dt style="width:70%;">{TSMRT_NUMBER} {L_MOST_REPLIED}</dt>
+					<dd class="lastpost" style="width:auto;"><span>{L_REPLIES}</span></dd>
+				</dl>
+			</li>
+		</ul>
+		<ul class="topiclist forums">
+			<!-- BEGIN most_replied -->
+			<li class="row">
+			<dl>
+				<dt style="width:70%;"><a style="font-size:1.1em; font-weight:bold;" href="{most_replied.U_FIRST_TOPIC}">{most_replied.TOPIC_TITLE}</a><br />{L_POST_BY_AUTHOR} <a style="font-weight:bold; color: #{most_replied.TOPIC_FIRST_POSTER_COLOUR};" href="{most_replied.USERNAME_FIRST}">{most_replied.TOPIC_FIRST_POSTER_NAME}</a> {L_POSTED_ON_DATE} {most_replied.TOPIC_TIME}</dt>
+				<dd class="lastpost" style="width:auto;"><span style="font-size:1.1em;">{most_replied.TOPIC_REPLIES}</span></dd>
+					
+			</dl>
+			</li>
+			<!-- END most_replied -->
+		</ul>
+		</div>
+	</div>
+</td>
+<!-- ENDIF -->
+</tr>
+</table>
+<!-- ENDIF -->
+
+<!-- IF S_TSMAU_ENABLE or S_TSMAF_ENABLE -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%">
+<tr>
+<!-- IF S_TSMAU_ENABLE -->
+<td valign="top"<!-- IF S_TSMAF_ENABLE --> style="padding-right:2px; width:50%;"<!-- ENDIF -->>
+	<div class="forabg">
+		<div class="inner">
+		<ul class="topiclist">
+			<li class="header">
+				<dl>
+					<dt style="width:70%;">{TSMAU_NUMBER} {L_MOST_ACTIVE_USERS}</dt>
+					<dd class="lastpost" style="width:auto;"><span>{L_POSTS}</span></dd>
+				</dl>
+			</li>
+		</ul>
+		<ul class="topiclist forums">
+			<!-- BEGIN most_active_users -->
+			<li class="row">
+			<dl>
+				<dt style="width:70%;"><a style="font-size:1.1em; font-weight:bold; color: #{most_active_users.USER_COLOUR};" href="{most_active_users.USER_ID}" title="{L_JOINED_US} {most_active_users.USER_REG}">{most_active_users.USERNAME}</a></dt>
+				<dd class="lastpost" style="width:auto;"><span style="font-size:1.1em;"><a href="{most_active_users.USER_POST_SEARCH}">{most_active_users.USER_POSTS}</a> ({most_active_users.USER_POST_PERCENT}%)</span></dd>
+			</dl>
+			</li>
+			<!-- END most_active_users -->
+		</ul>
+		</div>
+	</div>
+</td>
+<!-- ENDIF -->
+<!-- IF S_TSMAF_ENABLE -->
+<td valign="top"<!-- IF S_TSMAU_ENABLE --> style="padding-left:2px; width:50%;"<!-- ENDIF -->>
+	<div class="forabg">
+		<div class="inner">
+		<ul class="topiclist">
+			<li class="header">
+				<dl>
+					<dt style="width:70%;">{TSMAF_NUMBER} {L_MOST_ACTIVE_FORUMS}</dt>
+					<dd class="lastpost" style="width:auto;"><span>{L_POSTS}</span></dd>
+				</dl>
+			</li>
+		</ul>
+		<ul class="topiclist forums">
+			<!-- BEGIN most_active_forums -->
+			<li class="row">
+			<dl>
+				<dt style="width:70%;"><a style="font-size:1.1em; font-weight:bold;" href="{most_active_forums.FORUM_URL}">{most_active_forums.FORUM_NAME}</a></dt>
+				<dd class="lastpost" style="width:auto;"><span style="font-size:1.1em;">{most_active_forums.FORUM_POSTS} ({most_active_forums.FORUM_POSTS_PERCENT}%)</span></dd>
+				
+			</dl>
+			</li>
+			<!-- END most_active_forums -->
+		</ul>
+		</div>
+	</div>
+</td>
+<!-- ENDIF -->
+</tr>
+</table>
+<!-- ENDIF -->
+
+<!-- IF S_TSLVB_ENABLE or S_TSLRU_ENABLE -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%">
+<tr>
+<!-- IF S_TSLVB_ENABLE -->
+<td valign="top"<!-- IF S_TSLVB_ENABLE --> style="padding-right:2px; width:50%;"<!-- ENDIF -->>
+	<div class="forabg">
+		<div class="inner">
+		<ul class="topiclist">
+			<li class="header">
+				<dl>
+					<dt style="width:98%;">{TSLVB_NUMBER} {L_LAST_VISITED_BOTS}</dt>
+				</dl>
+			</li>
+		</ul>
+		<ul class="topiclist forums">
+			<!-- BEGIN last_visited_bots -->
+			<li class="row">
+			<dl>
+				<dt style="width:98%;">
+					<span style="float:left; font-size:1.1em; font-weight:bold; color: #{last_visited_bots.USER_COLOUR};">{last_visited_bots.USERNAME}</span>
+					<span style="float:right; font-size:1.1em;">{last_visited_bots.USER_LAST_VISIT}</span>
+				</dt>
+			</dl>
+			</li>
+			<!-- END last_visited_bots -->
+		</ul>
+		</div>
+	</div>
+</td>
+<!-- ENDIF -->
+<!-- IF S_TSLRU_ENABLE -->
+<td valign="top"<!-- IF S_TSLRU_ENABLE --> style="padding-left:2px; width:50%;"<!-- ENDIF -->>
+	<div class="forabg">
+		<div class="inner">
+		<ul class="topiclist">
+			<li class="header">
+				<dl>
+					<dt style="width:98%;">{TSLRU_NUMBER} {L_LAST_REGISTERED_USERS}</dt>
+				</dl>
+			</li>
+		</ul>
+		<ul class="topiclist forums">
+			<!-- BEGIN last_registered_user -->
+			<li class="row">
+			<dl>
+				<dt style="width:98%;">
+					<span style="float:left; font-size:1.1em; font-weight:bold;"><a style="font-weight:bold; color:#{last_registered_user.USER_COLOUR};" href="{last_registered_user.USER_URL}">{last_registered_user.USERNAME}</a></span>
+					<span style="float:right; font-size:1.1em;">{last_registered_user.USER_REGISTERED}</span>
+				</dt>
+			</dl>
+			</li>
+			<!-- END last_registered_user -->
+		</ul>
+		</div>
+	</div>
+</td>
+<!-- ENDIF -->
+</tr>
+</table>
+<!-- ENDIF -->

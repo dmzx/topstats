@@ -1,0 +1,15 @@
+services:
+    dmzx.topstats.listener:
+        class: dmzx\topstats\event\listener
+        arguments:
+            - @config
+            - @controller.helper
+            - @template
+            - @user
+            - @auth
+            - @dbal.conn
+            - @cache
+            - %core.root_path%
+            - %core.php_ext%	
+        tags:
+            - { name: event.listener }				
