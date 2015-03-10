@@ -89,17 +89,17 @@ class listener implements EventSubscriberInterface
 	{
 	
 	if (!defined('INCLUDES_FUNCTIONS_TOP_STATS_PHP'))
-{
+    {
 	define('INCLUDES_FUNCTIONS_TOP_STATS_PHP', true);
 	
 	$flist = $this->auth->acl_getf('f_read', true);
 	$flist = array_unique(array_keys($flist));
 	$flist = array_merge($flist, array(0));
 	
-// Recent Active Topics
-$enable_active_topics = (!empty($this->config['tsrat_enable']) ? true : false);
-if ($enable_active_topics && sizeof($flist))
-{	
+    // Recent Active Topics
+    $enable_active_topics = (!empty($this->config['tsrat_enable']) ? true : false);
+    if ($enable_active_topics && sizeof($flist))
+    {	
 	$sql = 'SELECT t.forum_id, t.topic_id, t.topic_title, t.topic_time, t.topic_views, t.topic_poster,  t.topic_posts_approved, t.topic_first_poster_name, t.topic_first_poster_colour, t.topic_last_post_id, t.topic_last_poster_name, t.topic_last_poster_colour, t.topic_last_post_time, t.topic_last_view_time, t.topic_last_poster_id, f.forum_name, f.forum_image
 		FROM ' . TOPICS_TABLE . ' t
 		LEFT JOIN ' . FORUMS_TABLE . ' f ON (t.forum_id = f.forum_id)
@@ -137,7 +137,7 @@ if ($enable_active_topics && sizeof($flist))
 	}
 	$this->db->sql_freeresult($result);
 	
-}
+    }
 	
 		
 		$this->template->assign_vars(array(
@@ -152,10 +152,10 @@ if ($enable_active_topics && sizeof($flist))
 		'S_TS_TICKER' 	     			=> (!empty($this->config['ts_ticker_enable'])) ? true : false,
     ));	
 
-// Most viewed topics
-$enable_viewed_topics = (!empty($this->config['tsmvt_enable']) ? true : false);
-if ($enable_viewed_topics && sizeof($flist))
-{	
+    // Most viewed topics
+    $enable_viewed_topics = (!empty($this->config['tsmvt_enable']) ? true : false);
+    if ($enable_viewed_topics && sizeof($flist))
+    {	
 	$sql = 'SELECT topic_id, forum_id, topic_title, topic_views, topic_time, topic_first_poster_name, topic_first_poster_colour, topic_poster, topic_last_poster_id
 		FROM ' . TOPICS_TABLE . ' WHERE ' . $this->db->sql_in_set('forum_id', $flist) . '
 		ORDER BY topic_views DESC';
@@ -194,12 +194,12 @@ if ($enable_viewed_topics && sizeof($flist))
 		'S_TSMVT_ENABLE'      			=> $enable_viewed_topics,
 		'TSMVT_NUMBER'					=> (isset($this->config['tsmvt_number'])) ? $this->config['tsmvt_number'] : '',
     ));
-}
+   }
 	
-// Most replied topics
-$enable_replied_topics = (!empty($this->config['tsmrt_enable']) ? true : false);
-if ($enable_replied_topics && sizeof($flist))
-{
+    // Most replied topics
+    $enable_replied_topics = (!empty($this->config['tsmrt_enable']) ? true : false);
+    if ($enable_replied_topics && sizeof($flist))
+   {
 	$sql = 'SELECT topic_id, forum_id, topic_title, topic_posts_approved, topic_time, topic_first_poster_name, topic_first_poster_colour, topic_poster, topic_last_poster_id 
 		FROM ' . TOPICS_TABLE . ' WHERE ' . $this->db->sql_in_set('forum_id', $flist) . '
 		ORDER BY topic_posts_approved DESC';
@@ -238,12 +238,12 @@ if ($enable_replied_topics && sizeof($flist))
 		'S_TSMRT_ENABLE'      			=> $enable_replied_topics,
 		'TSMRT_NUMBER'					=> (isset($this->config['tsmrt_number'])) ? $this->config['tsmrt_number'] : '',
     ));
-}
+    }
 
-// Most active users
-$enable_active_users = (!empty($this->config['tsmau_enable']) ? true : false);
-if ($enable_active_users)
-{	
+    // Most active users
+    $enable_active_users = (!empty($this->config['tsmau_enable']) ? true : false);
+    if ($enable_active_users)
+   {	
 	if (($active_users = $this->cache->get('_ts_most_active_users')) === false)
 	{
 		$sql = 'SELECT user_id, username, user_posts, user_colour, user_regdate
@@ -287,12 +287,12 @@ if ($enable_active_users)
 		'S_TSMAU_ENABLE'      			=> $enable_active_users,
 		'TSMAU_NUMBER'					=> (isset($this->config['tsmau_number'])) ? $this->config['tsmau_number'] : '',
     ));
-}
+    }
 
-// Most active forums
-$enable_active_forums = (!empty($this->config['tsmaf_enable']) ? true : false);
-if ($enable_active_forums && sizeof($flist))
-{
+   // Most active forums
+   $enable_active_forums = (!empty($this->config['tsmaf_enable']) ? true : false);
+   if ($enable_active_forums && sizeof($flist))
+   {
 	$sql = 'SELECT forum_id, forum_name, forum_topics_approved
 		FROM ' . FORUMS_TABLE . ' WHERE ' . $this->db->sql_in_set('forum_id', $flist) . ' AND forum_type = ' . FORUM_POST . '
 		ORDER BY forum_topics_approved DESC';
@@ -325,11 +325,11 @@ if ($enable_active_forums && sizeof($flist))
 		'S_TSMAF_ENABLE'      			=> $enable_active_forums,
 		'TSMAF_NUMBER'					=> (isset($this->config['tsmaf_number'])) ? $this->config['tsmaf_number'] : '',
     ));
-}
+   }
 
-// Last visited Bots
-if (!empty($this->config['tslvb_enable']))
-{	
+   // Last visited Bots
+   if (!empty($this->config['tslvb_enable']))
+   {	
 	if ( ( $last_bots = $this->cache->get('_ts_last_visited_bots') ) === false )
 	{	
 		$sql = 'SELECT user_id, username, user_lastvisit, user_colour
@@ -364,12 +364,12 @@ if (!empty($this->config['tslvb_enable']))
 		'S_TSLVB_ENABLE'      			=> $this->config['tslvb_enable'],
 		'TSLVB_NUMBER'					=> $this->config['tslvb_number'],
     ));
-}
+    }
 
-// Last registered Users
-$enable_last_users = (!empty($this->config['tslru_enable']) ? true : false);
-if ($enable_last_users)
-{   
+    // Last registered Users
+    $enable_last_users = (!empty($this->config['tslru_enable']) ? true : false);
+    if ($enable_last_users)
+    {   
 	if (( $last_users = $this->cache->get('_ts_last_registered_users')) === false)
 	{
 		$sql = 'SELECT user_id, username, user_colour, user_regdate
@@ -407,10 +407,7 @@ if ($enable_last_users)
 		'S_TSLRU_ENABLE'				=> $enable_last_users,
 		'TSLRU_NUMBER'					=> (isset($this->config['tslru_number'])) ? $this->config['tslru_number'] : '',
 	));
-}
-
-}
-}
-
-	
+   }
+  }
+ }
 }

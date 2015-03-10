@@ -40,31 +40,4 @@ class topstats_schema extends \phpbb\db\migration\migration
 			array('config.add', array('ts_version', '1.0.0')),
 		);
 	}
-	
-		public function revert_data()
-	{
-		return array(	
-			array('config.remove', array('tsrat_enable')),
-			array('config.remove', array('tsmvt_enable')),
-			array('config.remove', array('tsmrt_enable')),
-			array('config.remove', array('tsrat_number')),
-			array('config.remove', array('tsmvt_number')),
-			array('config.remove', array('tsmrt_number')),
-			array('config.remove', array('ts_jsscroll')),
-			array('config.remove', array('tsjss_speed')),
-			array('config.remove', array('tsjss_interval')),
-			array('config.remove', array('tsmau_enable')),
-			array('config.remove', array('tsmau_number')),	
-            array('config.remove', array('tsmaf_enable')),	
-			array('config.remove', array('ts_jsscroll_direction')),
-			array('config.remove', array('ts_jsscroll_pause')),
-			array('config.remove', array('ts_jsscroll_navigation')),
-			array('config.remove', array('ts_ticker_enable')),
-			array('config.remove', array('tslvb_enable')),
-			array('config.remove', array('tslvb_number')),
-			array('config.remove', array('tslru_enable')),
-			array('config.remove', array('tslru_number')),
-			array('config.remove', array('ts_version')),
-		);
-	}
 }

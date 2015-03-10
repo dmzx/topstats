@@ -1,7 +1,7 @@
 {
     "name": "dmzx/topstats",
     "type": "phpbb-extension",
-    "description": "The Top Stats mod displays the some cool stats on your forum index.",
+    "description": "The Top Stats extension displays some cool stats on your forum index.",
     "homepage": "http://www.dmzx-web.net",
     "version": "1.0.0",
     "time": "2015-03-07",
