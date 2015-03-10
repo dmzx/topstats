@@ -69,7 +69,6 @@ class listener implements EventSubscriberInterface
 		$this->auth = $auth;
 		$this->db = $db;
 		$this->cache = $cache;
-
 		$this->phpbb_root_path = $phpbb_root_path;
 		$this->phpEx = $phpEx;
 	}
