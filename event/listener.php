@@ -266,9 +266,10 @@ class listener implements EventSubscriberInterface
 	
 	foreach ($active_users as $row)
 	{
+		$total_posts = $this->config['num_posts'];
 		$most_active_user = append_sid("{$this->phpbb_root_path}memberlist.$this->phpEx", 'mode=viewprofile' . '&amp;u=' . $row['user_id']);
 		$most_active_user_search = append_sid("{$this->phpbb_root_path}search.$this->phpEx", 'author_id=' . $row['user_id'] . '&amp;sr=posts');
-		$most_active_user_percent = ($row['user_posts'] * 100) ;// / $total_posts
+		$most_active_user_percent = ($row['user_posts'] * 100) / $total_posts;
 		
 		$this->template->assign_block_vars('most_active_users', array(
 			'USER_ID'						=> $most_active_user,
@@ -307,8 +308,9 @@ class listener implements EventSubscriberInterface
 
 	foreach ($active_forums as $row)
 	{
+		$total_posts = $this->config['num_posts'];
 		$most_active_forums = append_sid("{$this->phpbb_root_path}viewforum.$this->phpEx", 'f=' . $row['forum_id']);
-		$most_active_forums_percent = ($row['forum_topics_approved'] * 100); // / $total_posts
+		$most_active_forums_percent = ($row['forum_topics_approved'] * 100) / $total_posts;
 		
 		$this->template->assign_block_vars('most_active_forums', array(
 			'FORUM_URL'						=> $most_active_forums,
