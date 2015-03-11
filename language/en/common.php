@@ -57,7 +57,7 @@ $lang = array_merge($lang, array(
 	'TOP_STATS'								=> 'Top Stats',
 	'TOPSTATS_SAVED'						=> 'Top Stats settings saved',
 	'TS_VERSION'							=> 'Version',
-	'TS_DONATE'							=> 'Please consider a <a href="http://www.phpbb3bbcodes.com/donate.php"><strong>Donation</strong></a> if you like the extension. Made by <a href="http://www.dmzx-web.net"><strong>dmzx</strong></a>',
+	'TS_DONATE'							=> 'Author <a href="http://www.phpbb3bbcodes.com"><strong>Stoker</strong></a>. Extension made by <a href="http://www.dmzx-web.net"><strong>dmzx</strong></a>',
 	'TS_CONFIG'								=> 'Configuration',
 	'TS_RECENT_SETTINGS'					=> 'Recent Active Topics settings',
 	'TS_RECENT_ENABLE'						=> 'Enable Recent Active Topics',
