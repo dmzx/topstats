@@ -222,7 +222,7 @@ class listener implements EventSubscriberInterface
 			'TOPIC_ID'						=> $row['topic_id'], 
 			'FORUM_ID'	    				=> $row['forum_id'],
 			'TOPIC_TITLE'					=> (utf8_strlen($row['topic_title']) > 41) ? truncate_string($row['topic_title'], 40) . "\xE2\x80\xA6" : $row['topic_title'],
-	//		'TOPIC_REPLIES'					=> $row['topic_replies'],
+			'TOPIC_REPLIES'					=> $row['topic_posts_approved'],
 			'TOPIC_TIME'                    => $this->user->format_date($row['topic_time']), 
 			'TOPIC_FIRST_POSTER_NAME'		=> $row['topic_first_poster_name'],
 			'TOPIC_FIRST_POSTER_COLOUR'		=> $row['topic_first_poster_colour'],
