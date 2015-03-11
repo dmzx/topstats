@@ -10,7 +10,7 @@
 
 namespace dmzx\topstats\migrations;
 
-class topstats_schema extends \phpbb\db\migration\migration
+class topstats_data extends \phpbb\db\migration\migration
 {
 	
 	public function update_data()

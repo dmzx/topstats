@@ -1,3 +1,0 @@
-dmzx_topstats_controller:
-    path: /topstats
-    defaults: { _controller: dmzx.topstats.controller:handle }
