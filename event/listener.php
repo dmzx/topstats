@@ -118,7 +118,7 @@ class listener implements EventSubscriberInterface
 			'TOPIC_TITLE'					=> $row['topic_title'],
 			'TOPIC_TIME'                    => $this->user->format_date($row['topic_time']), 
 			'TOPIC_VIEWS'					=> $row['topic_views'],
-	//		'TOPIC_REPLIES'					=> $row['topic_posts_approved'],
+			'TOPIC_REPLIES'					=> $row['topic_posts_approved'],
 			'TOPIC_FIRST_POSTER_NAME'		=> $row['topic_first_poster_name'],
 			'TOPIC_FIRST_POSTER_COLOUR'		=> $row['topic_first_poster_colour'],
 			'TOPIC_LAST_POSTER_NAME'		=> $row['topic_last_poster_name'],
