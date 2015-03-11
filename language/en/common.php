@@ -67,7 +67,7 @@ $lang = array_merge($lang, array(
 	'TSRAT_NUMBER_EXPLAIN'					=> 'Number of Recent Active Topics displayed',
 	
 	'TS_JSSCROLL'							=> 'Jquery Scroll',
-	'TS_JSSCROLL_EXPLAIN'					=> 'Enable or disable the use of jquery scrolling Recent Active Topics<br />Please not that this feature needs to be disabled if you use Jquery Ticker',
+	'TS_JSSCROLL_EXPLAIN'					=> 'Enable or disable the use of jquery scrolling Recent Active Topics<br />Please note that this feature needs to be disabled if you use Jquery Ticker',
 	'TS_JSSCROLL_SPEED'						=> 'Jquery Scroll Speed',
 	'TS_JSSCROLL_SPEED_EXPLAIN'				=> 'The speed of the scrolling in milliseconds',
 	'TS_JSSCROLL_INTERVAL'					=> 'Jquery Scroll Interval',
@@ -81,7 +81,7 @@ $lang = array_merge($lang, array(
 	'TS_JSSCROLL_NAVIGATION'				=> 'Jquery Scroll Navigation',
 	'TS_JSSCROLL_NAVIGATION_EXPLAIN'		=> 'Enable or disable the JSSCroll navigation for Recent Active Topics',
 	'TS_TICKER_ENABLE'						=> 'Jquery Ticker',
-	'TS_TICKER_ENABLE_EXPLAIN'				=> 'Enable or disable the Jquery Ticker for Recent Active Topics<br />Please not that this feature needs to be disabled if you use Jquery Scroll',
+	'TS_TICKER_ENABLE_EXPLAIN'				=> 'Enable or disable the Jquery Ticker for Recent Active Topics<br />Please note that this feature needs to be disabled if you use Jquery Scroll',
 	
 	'TS_MOSTVIEWED_SETTINGS'				=> 'Most Viewed Topics settings',
 	'TS_MOSTVIEWED_ENABLE'					=> 'Enable Most Viewed Topics',
