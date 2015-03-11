@@ -8,8 +8,8 @@
 		<ul class="topiclist">
 			<li class="header">
 				<dl>
-					<dt style="width:70%;">{TSMVT_NUMBER} {L_MOST_VIEWED}</dt>
-					<dd class="lastpost" style="width:auto;"><span>{L_VIEWS}</span></dd>
+					<dt style="width: 80%;padding-left: 6px;">{TSMVT_NUMBER} {L_MOST_VIEWED}</dt>
+					<dd style="float: right;padding-right: 25px;"><span>{L_VIEWS}</span></dd>
 				</dl>
 			</li>
 		</ul>
@@ -17,8 +17,8 @@
 			<!-- BEGIN most_viewed -->
 			<li class="row">
 			<dl>
-				<dt style="width:70%;"><a style="font-size:1.1em; font-weight:bold;" href="{most_viewed.U_FIRST_TOPIC}">{most_viewed.TOPIC_TITLE}</a><br />{L_POST_BY_AUTHOR} <a style="font-weight:bold; color: #{most_viewed.TOPIC_FIRST_POSTER_COLOUR};" href="{most_viewed.USERNAME_FIRST}">{most_viewed.TOPIC_FIRST_POSTER_NAME}</a> {L_POSTED_ON_DATE} {most_viewed.TOPIC_TIME}</dt>
-				<dd class="lastpost" style="width:auto;"><span style="font-size:1.1em;">{most_viewed.TOPIC_VIEWS}</span></dd>
+				<dt style="width: 80%;padding-left: 6px;"><a style="font-size:1.1em; font-weight:bold;" href="{most_viewed.U_FIRST_TOPIC}">{most_viewed.TOPIC_TITLE}</a><br />{L_POST_BY_AUTHOR} <a style="font-weight:bold; color: #{most_viewed.TOPIC_FIRST_POSTER_COLOUR};" href="{most_viewed.USERNAME_FIRST}">{most_viewed.TOPIC_FIRST_POSTER_NAME}</a> {L_POSTED_ON_DATE} {most_viewed.TOPIC_TIME}</dt>
+				<dd style="float: right;padding-right: 25px;border: none;"><span style="font-size:1.1em;">{most_viewed.TOPIC_VIEWS}</span></dd>
 			</dl>
 			</li>
 			<!-- END most_viewed -->
@@ -34,8 +34,8 @@
 		<ul class="topiclist">
 			<li class="header">
 				<dl>
-					<dt style="width:70%;">{TSMRT_NUMBER} {L_MOST_REPLIED}</dt>
-					<dd class="lastpost" style="width:auto;"><span>{L_REPLIES}</span></dd>
+					<dt>{TSMRT_NUMBER} {L_MOST_REPLIED}</dt>
+					<dd style="float: right;padding-right: 25px;border: none;"><span>{L_REPLIES}</span></dd>
 				</dl>
 			</li>
 		</ul>
@@ -43,8 +43,8 @@
 			<!-- BEGIN most_replied -->
 			<li class="row">
 			<dl>
-				<dt style="width:70%;"><a style="font-size:1.1em; font-weight:bold;" href="{most_replied.U_FIRST_TOPIC}">{most_replied.TOPIC_TITLE}</a><br />{L_POST_BY_AUTHOR} <a style="font-weight:bold; color: #{most_replied.TOPIC_FIRST_POSTER_COLOUR};" href="{most_replied.USERNAME_FIRST}">{most_replied.TOPIC_FIRST_POSTER_NAME}</a> {L_POSTED_ON_DATE} {most_replied.TOPIC_TIME}</dt>
-				<dd class="lastpost" style="width:auto;"><span style="font-size:1.1em;">{most_replied.TOPIC_REPLIES}</span></dd>
+				<dt style="width: 50%;padding-left: 6px;"><a style="font-size:1.1em; font-weight:bold;" href="{most_replied.U_FIRST_TOPIC}">{most_replied.TOPIC_TITLE}</a><br />{L_POST_BY_AUTHOR} <a style="font-weight:bold; color: #{most_replied.TOPIC_FIRST_POSTER_COLOUR};" href="{most_replied.USERNAME_FIRST}">{most_replied.TOPIC_FIRST_POSTER_NAME}</a> {L_POSTED_ON_DATE} {most_replied.TOPIC_TIME}</dt>
+				<dd style="float: right;padding-right: 25px;border: none;"><span style="font-size:1.1em;">{most_replied.TOPIC_REPLIES}</span></dd>
 					
 			</dl>
 			</li>
@@ -68,8 +68,8 @@
 		<ul class="topiclist">
 			<li class="header">
 				<dl>
-					<dt style="width:70%;">{TSMAU_NUMBER} {L_MOST_ACTIVE_USERS}</dt>
-					<dd class="lastpost" style="width:auto;"><span>{L_POSTS}</span></dd>
+					<dt>{TSMAU_NUMBER} {L_MOST_ACTIVE_USERS}</dt>
+					<dd style="float: right;padding-right: 25px;border: none;"><span>{L_POSTS}</span></dd>
 				</dl>
 			</li>
 		</ul>
@@ -77,8 +77,8 @@
 			<!-- BEGIN most_active_users -->
 			<li class="row">
 			<dl>
-				<dt style="width:70%;"><a style="font-size:1.1em; font-weight:bold; color: #{most_active_users.USER_COLOUR};" href="{most_active_users.USER_ID}" title="{L_JOINED_US} {most_active_users.USER_REG}">{most_active_users.USERNAME}</a></dt>
-				<dd class="lastpost" style="width:auto;"><span style="font-size:1.1em;"><a href="{most_active_users.USER_POST_SEARCH}">{most_active_users.USER_POSTS}</a> ({most_active_users.USER_POST_PERCENT}%)</span></dd>
+				<dt><a style="font-size:1.1em; font-weight:bold; padding-left: 6px; color: #{most_active_users.USER_COLOUR};" href="{most_active_users.USER_ID}" title="{L_JOINED_US} {most_active_users.USER_REG}">{most_active_users.USERNAME}</a></dt>
+				<dd style="float: right;padding-right: 6px;border: none;"><span style="font-size:1.1em;"><a href="{most_active_users.USER_POST_SEARCH}">{most_active_users.USER_POSTS}</a> ({most_active_users.USER_POST_PERCENT}%)</span></dd>
 			</dl>
 			</li>
 			<!-- END most_active_users -->
@@ -94,8 +94,8 @@
 		<ul class="topiclist">
 			<li class="header">
 				<dl>
-					<dt style="width:70%;">{TSMAF_NUMBER} {L_MOST_ACTIVE_FORUMS}</dt>
-					<dd class="lastpost" style="width:auto;"><span>{L_POSTS}</span></dd>
+					<dt>{TSMAF_NUMBER} {L_MOST_ACTIVE_FORUMS}</dt>
+					<dd style="float: right;padding-right: 25px;border: none;"><span>{L_POSTS}</span></dd>
 				</dl>
 			</li>
 		</ul>
@@ -103,8 +103,8 @@
 			<!-- BEGIN most_active_forums -->
 			<li class="row">
 			<dl>
-				<dt style="width:70%;"><a style="font-size:1.1em; font-weight:bold;" href="{most_active_forums.FORUM_URL}">{most_active_forums.FORUM_NAME}</a></dt>
-				<dd class="lastpost" style="width:auto;"><span style="font-size:1.1em;">{most_active_forums.FORUM_POSTS} ({most_active_forums.FORUM_POSTS_PERCENT}%)</span></dd>
+				<dt><a style="font-size:1.1em; padding-left: 6px; font-weight:bold;" href="{most_active_forums.FORUM_URL}">{most_active_forums.FORUM_NAME}</a></dt>
+				<dd style="float: right; padding-right: 6px; border: none;"><span style="font-size:1.1em;">{most_active_forums.FORUM_POSTS} ({most_active_forums.FORUM_POSTS_PERCENT}%)</span></dd>
 				
 			</dl>
 			</li>
@@ -128,7 +128,7 @@
 		<ul class="topiclist">
 			<li class="header">
 				<dl>
-					<dt style="width:98%;">{TSLVB_NUMBER} {L_LAST_VISITED_BOTS}</dt>
+					<dt>{TSLVB_NUMBER} {L_LAST_VISITED_BOTS}</dt>
 				</dl>
 			</li>
 		</ul>
@@ -136,9 +136,9 @@
 			<!-- BEGIN last_visited_bots -->
 			<li class="row">
 			<dl>
-				<dt style="width:98%;">
-					<span style="float:left; font-size:1.1em; font-weight:bold; color: #{last_visited_bots.USER_COLOUR};">{last_visited_bots.USERNAME}</span>
-					<span style="float:right; font-size:1.1em;">{last_visited_bots.USER_LAST_VISIT}</span>
+				<dt>
+					<span style="float:left; padding-left: 6px;  font-size:1.1em; font-weight:bold; color: #{last_visited_bots.USER_COLOUR};">{last_visited_bots.USERNAME}</span>
+					<span style="float:right; padding-right: 6px;  font-size:1.1em;">{last_visited_bots.USER_LAST_VISIT}</span>
 				</dt>
 			</dl>
 			</li>
@@ -155,7 +155,7 @@
 		<ul class="topiclist">
 			<li class="header">
 				<dl>
-					<dt style="width:98%;">{TSLRU_NUMBER} {L_LAST_REGISTERED_USERS}</dt>
+					<dt>{TSLRU_NUMBER} {L_LAST_REGISTERED_USERS}</dt>
 				</dl>
 			</li>
 		</ul>
@@ -163,9 +163,9 @@
 			<!-- BEGIN last_registered_user -->
 			<li class="row">
 			<dl>
-				<dt style="width:98%;">
-					<span style="float:left; font-size:1.1em; font-weight:bold;"><a style="font-weight:bold; color:#{last_registered_user.USER_COLOUR};" href="{last_registered_user.USER_URL}">{last_registered_user.USERNAME}</a></span>
-					<span style="float:right; font-size:1.1em;">{last_registered_user.USER_REGISTERED}</span>
+				<dt>
+					<span style="float:left; padding-left: 6px;  font-size:1.1em; font-weight:bold;"><a style="font-weight:bold; color:#{last_registered_user.USER_COLOUR};" href="{last_registered_user.USER_URL}">{last_registered_user.USERNAME}</a></span>
+					<span style="float:right; padding-right: 6px;  font-size:1.1em;">{last_registered_user.USER_REGISTERED}</span>
 				</dt>
 			</dl>
 			</li>
