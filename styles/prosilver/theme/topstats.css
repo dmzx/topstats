@@ -8,16 +8,27 @@
 */
 
 #vertical-ticker{
-	position:relative;	
-	height: 123px;
-	overflow: hidden;
+   position:relative;   
+   height: 123px;
+   overflow: hidden;
 }
 
 #vertical-ticker li{
-	display: block;
+   display: block;
 }
 
 #news{
-	height: 41px;
-	overflow: hidden;
+   height: 41px;
+   overflow: hidden;
+}
+
+dl.starimg {
+   background-image: url("./images/starimg.png");
+   background-repeat: no-repeat;
+}
+
+.tsticker {
+   text-align:right;
+   padding-right:10px;
+   margin-bottom: -24px;
 }
