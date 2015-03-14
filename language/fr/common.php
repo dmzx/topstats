@@ -8,7 +8,6 @@
 *
 */
 
-
 /**
 * DO NOT CHANGE
 */
@@ -53,7 +52,7 @@ $lang = array_merge($lang, array(
 	'STOP_SCROLL'				=> 'Arrêter',
 	'LAST_REGISTERED_USERS'		=> 'Derniers membres enregistrés',
 	'LAST_VISITED_BOTS'			=> 'Dernière visite des robots',
-	
+
 	'TOP_STATS'								=> 'Top Statistiques',
 	'TOPSTATS_SAVED'						=> 'Le paramètres du top statistique ont été enregistrés',
 	'TS_VERSION'							=> 'Version',
@@ -62,10 +61,10 @@ $lang = array_merge($lang, array(
 	'TS_RECENT_SETTINGS'					=> 'Paramètres des sujets actifs récents',
 	'TS_RECENT_ENABLE'						=> 'Activer les sujets actifs récents',
 	'TS_RECENT_ENABLE_EXPLAIN'				=> 'Activer ou désactiver l’affichage de la partie sujets actifs récents',
-	
+
 'TSRAT_NUMBER'							=> 'Sujets Actifs Récents',
 	'TSRAT_NUMBER_EXPLAIN'					=> 'Nombre de Sujets Actifs Récents a afficher',
-	
+
 	'TS_JSSCROLL'							=> 'Faire défiler',
 	'TS_JSSCROLL_EXPLAIN'					=> 'Activer ou désactiver l’utilisation du défilement des Sujets Actifs Récents<br />S’il vous plaît noter que cette fonctionnalité doit être désactivée si vous utilisez Jquery Ticker',
 	'TS_JSSCROLL_SPEED'						=> 'Vitesse de défilement',
@@ -82,25 +81,25 @@ $lang = array_merge($lang, array(
 	'TS_JSSCROLL_NAVIGATION_EXPLAIN'		=> 'Activer ou désactiver la navigation JSSCroll pour les Sujets Actifs Récents',
 	'TS_TICKER_ENABLE'						=> 'Jquery Ticker',
 	'TS_TICKER_ENABLE_EXPLAIN'				=> 'Activer ou désactiver Jquery Ticker pour les Sujets Actifs Récents<br />S’il vous plaît noter que cette fonctionnalité doit être désactivée si vous utilisez Jquery Scroll',
-	
+
 	'TS_MOSTVIEWED_SETTINGS'				=> 'Paramètres des sujets les plus vus',
 	'TS_MOSTVIEWED_ENABLE'					=> 'Activer les sujets les plus vus',
 	'TS_MOSTVIEWED_ENABLE_EXPLAIN'			=> 'Activer ou désactiver l’affichage des sujets les plus vus',
 	'TS_MOSTVIEWED_NUMBER'					=> 'Sujets les plus vus',
 	'TS_MOSTVIEWED_NUMBER_EXPLAIN'			=> 'Nombres de sujets les plus vus a afficher',
-	
+
 	'TS_MOSTREPLIED_SETTINGS'				=> 'Paramètres des sujets les plus répondus',
 	'TS_MOSTREPLIED_ENABLE'					=> 'Activer les sujets les plus répondus',
 	'TS_MOSTREPLIED_ENABLE_EXPLAIN'			=> 'Activer ou désactiver l’affichage des sujets les plus répondus',
 	'TS_MOSTREPLIED_NUMBER'					=> 'Sujets les plus répondus',
 	'TS_MOSTREPLIED_NUMBER_EXPLAIN'			=> 'Nombres de sujets les plus répondus a afficher',
-	
+
 	'TS_MOSTACTIVEUSER_SETTINGS'			=> 'Paramètres des membres les plus actifs',
 	'TS_MOSTACTIVEUSER_ENABLE'				=> 'Activer les membres les plus actifs',
 	'TS_MOSTACTIVEUSER_ENABLE_EXPLAIN'		=> 'Activer ou désactiver l’affichage des membres les plus actifs',
 	'TS_MOSTACTIVEUSER_NUMBER'				=> 'Membres les plus actifs',
 	'TS_MOSTACTIVEUSER_NUMBER_EXPLAIN'		=> 'Nombres de membres les plus actifs a afficher',
-	
+
 	'TS_MOSTACTIVEFORUM_SETTINGS'			=> 'Paramètres des forums les plus actifs',
 	'TS_MOSTACTIVEFORUM_ENABLE'				=> 'Activer les forums les plus actifs',
 	'TS_MOSTACTIVEFORUM_ENABLE_EXPLAIN'		=> 'Activer ou désactiver l’affichage des forums les plus actifs',
@@ -110,7 +109,7 @@ $lang = array_merge($lang, array(
 	'TS_LASTVISITEDBOT_ENABLE'				=> 'Activer la dernière visite des robots',
 	'TS_LASTVISITEDBOT_ENABLE_EXPLAIN'		=> 'Activer ou désactiver l’affichage de la dernière visite des robots',
 	'TS_LASTVISITEDBOT_NUMBER'				=> 'Dernière visite des robots',
-	'TS_LASTVISITEDBOT_NUMBER_EXPLAIN'		=> 'Nombre de dernière visite de robot a afficher',	
+	'TS_LASTVISITEDBOT_NUMBER_EXPLAIN'		=> 'Nombre de dernière visite de robot a afficher',
 	'TS_LASTREGISTEREDUSER_SETTINGS'		=> 'Paramètres des derniers membres enregistrés',
 	'TS_LASTREGISTEREDUSER_ENABLE'			=> 'Activer les derniers membres enregistrés',
 	'TS_LASTREGISTEREDUSER_ENABLE_EXPLAIN'	=> 'Activer ou désactiver l’affichage des derniers membres enregistrés',

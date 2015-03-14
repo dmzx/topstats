@@ -12,15 +12,15 @@ namespace dmzx\topstats\acp;
 
 class topstats_info
  {
-    function module()
-    {
-         return array(
+	function module()
+	{
+		 return array(
 			'filename'	=> '\dmzx\topstats\acp\topstats_module',
 			'title'		=> 'TOP_STATS',
 			'modes'		=> array(
 			'configuration'	=> array(
-			'title' => 'TS_CONFIG', 
-			'auth' => 'ext_dmzx/topstats && acl_a_board', 
+			'title' => 'TS_CONFIG',
+			'auth' => 'ext_dmzx/topstats && acl_a_board',
 			'cat' => array('TOP_STATS')),
 			),
 		);

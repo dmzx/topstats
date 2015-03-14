@@ -3,7 +3,7 @@
  * Copyright (c) 2006/2007 Sam Collett (http://www.texotela.co.uk)
  * Licensed under the MIT License:
  * http://www.opensource.org/licenses/mit-license.php
- * 
+ *
  * Version 2.0
  * Demo: http://www.texotela.co.uk/code/jquery/newsticker/
  *
@@ -11,13 +11,13 @@
  * $Rev: 2005 $
  *
  */
- 
+
 (function($) {
 /*
  * A basic news ticker.
  *
- * @name     newsticker (or newsTicker)
- * @param    delay      Delay (in milliseconds) between iterations. Default 4 seconds (4000ms)
+ * @name	 newsticker (or newsTicker)
+ * @param	delay	  Delay (in milliseconds) between iterations. Default 4 seconds (4000ms)
  * @author   Sam Collett (http://www.texotela.co.uk)
  * @example  $("#news").newsticker(); // or $("#news").newsTicker(5000);
  *

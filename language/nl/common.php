@@ -8,7 +8,6 @@
 *
 */
 
-
 /**
 * DO NOT CHANGE
 */
@@ -53,7 +52,7 @@ $lang = array_merge($lang, array(
 	'STOP_SCROLL'				=> 'Stop',
 	'LAST_REGISTERED_USERS'		=> 'Laatste geregistreerde gebruikers',
 	'LAST_VISITED_BOTS'			=> 'Laatst bezochte bots',
-	
+
 	'TOP_STATS'								=> 'Top Stats',
 	'TOPSTATS_SAVED'						=> 'Top Stats instellingen zijn opgeslagen',
 	'TS_VERSION'							=> 'Versie',
@@ -61,11 +60,11 @@ $lang = array_merge($lang, array(
 	'TS_CONFIG'								=> 'Configuratie',
 	'TS_RECENT_SETTINGS'					=> 'Instellingen recent actieve topics',
 	'TS_RECENT_ENABLE'						=> 'Inschakelen recent actieve topics',
-	'TS_RECENT_ENABLE_EXPLAIN'				=> 'In of Uitschakelen van de recent actieve topics',	
-	
+	'TS_RECENT_ENABLE_EXPLAIN'				=> 'In of Uitschakelen van de recent actieve topics',
+
 	'TSRAT_NUMBER'							=> 'Recent actieve topics',
 	'TSRAT_NUMBER_EXPLAIN'					=> 'Aantal getoonde berichten van de recent actieve topics',
-	
+
 	'TS_JSSCROLL'							=> 'Jquery Scroll',
 	'TS_JSSCROLL_EXPLAIN'					=> 'In of Uitschakelen om gebruik te maken van de jquery scrolling recent Aactieve topics<br />Als je een Jquery Ticker gebruikt, moet je deze mogelijkheid uitschakelen',
 	'TS_JSSCROLL_SPEED'						=> 'Jquery Scroll Snelheid',
@@ -82,37 +81,37 @@ $lang = array_merge($lang, array(
 	'TS_JSSCROLL_NAVIGATION_EXPLAIN'		=> 'In of Uitschakelen van JSSCroll navigatie van de recent active topics',
 	'TS_TICKER_ENABLE'						=> 'Jquery Ticker',
 	'TS_TICKER_ENABLE_EXPLAIN'				=> 'In of Uitschakelen van de Jquery Ticker voor recent active topics<br />Als je een Jquery Scroll gebruikt, moet je deze mogelijkheid uitschakelen',
-	
+
 	'TS_MOSTVIEWED_SETTINGS'				=> 'Meest bekeken topics instellingen',
 	'TS_MOSTVIEWED_ENABLE'					=> 'Inschakelen meest bekeken topics',
 	'TS_MOSTVIEWED_ENABLE_EXPLAIN'			=> 'In of Uitschakelen van de meest bekeken topics',
 	'TS_MOSTVIEWED_NUMBER'					=> 'Meest bekeken topics',
 	'TS_MOSTVIEWED_NUMBER_EXPLAIN'			=> 'Aantal getoonde berichten van de meest bekeken topics',
-	
+
 	'TS_MOSTREPLIED_SETTINGS'				=> 'Meest beantwoorde topics instellingen',
 	'TS_MOSTREPLIED_ENABLE'					=> 'Inschakelen meest beantwoorde topics',
 	'TS_MOSTREPLIED_ENABLE_EXPLAIN'			=> 'In of Uitschakelen van de meest beantwoorde topics',
 	'TS_MOSTREPLIED_NUMBER'					=> 'Meest beantwoorde topics',
 	'TS_MOSTREPLIED_NUMBER_EXPLAIN'			=> 'Aantal getoonde berichten van de meest bantwoorde topics',
-	
+
 	'TS_MOSTACTIVEUSER_SETTINGS'			=> 'Meest actieve gebruikers instellingen',
 	'TS_MOSTACTIVEUSER_ENABLE'				=> 'Inschakelen meest actieve gebruikers',
 	'TS_MOSTACTIVEUSER_ENABLE_EXPLAIN'		=> 'In of Uitschakelen van de meest actieve gebruikers',
 	'TS_MOSTACTIVEUSER_NUMBER'				=> 'Meest actieve gebruikers',
 	'TS_MOSTACTIVEUSER_NUMBER_EXPLAIN'		=> 'Aantal getoonde berichten van de meest actieve gebruikers',
-	
+
 	'TS_MOSTACTIVEFORUM_SETTINGS'			=> 'Meest actieve forums instellingen',
 	'TS_MOSTACTIVEFORUM_ENABLE'				=> 'Inschakelen meest actieve forums',
 	'TS_MOSTACTIVEFORUM_ENABLE_EXPLAIN'		=> 'In of Uitschakelen van de meest actieve forums',
 	'TS_MOSTACTIVEFORUM_NUMBER'				=> 'Meest actieve forums',
 	'TS_MOSTACTIVEFORUM_NUMBER_EXPLAIN'		=> 'Aantal getoonde berichten van de meest actieve forums',
-	
+
 	'TS_LASTVISITEDBOT_SETTINGS'			=> 'Laatst bezochte Bots instellingen',
 	'TS_LASTVISITEDBOT_ENABLE'				=> 'Inschakelen laatst bezochte Bots',
 	'TS_LASTVISITEDBOT_ENABLE_EXPLAIN'		=> 'In of Uitschakelen van de laatst bezochte Bots',
 	'TS_LASTVISITEDBOT_NUMBER'				=> 'Laatst bezochte Bots',
 	'TS_LASTVISITEDBOT_NUMBER_EXPLAIN'		=> 'Aantal getoonde berichten van de laatst bezochte Bots',
-	
+
 	'TS_LASTREGISTEREDUSER_SETTINGS'		=> 'Laatst geregistreerde gebruikers instellingen',
 	'TS_LASTREGISTEREDUSER_ENABLE'			=> 'Inschakelen laatst geregistreerde gebruikers',
 	'TS_LASTREGISTEREDUSER_ENABLE_EXPLAIN'	=> 'In of Uitschakelen van de laatst geregistreerde gebruikers',

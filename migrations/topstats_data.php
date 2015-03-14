@@ -12,7 +12,7 @@ namespace dmzx\topstats\migrations;
 
 class topstats_data extends \phpbb\db\migration\migration
 {
-	
+
 	public function update_data()
 	{
 		return array(
@@ -27,8 +27,8 @@ class topstats_data extends \phpbb\db\migration\migration
 			array('config.add', array('tsjss_speed', 400)),
 			array('config.add', array('tsjss_interval', 4000)),
 			array('config.add', array('tsmau_enable', 1)),
-			array('config.add', array('tsmau_number', 5)),	
-            array('config.add', array('tsmaf_enable', 1)),	
+			array('config.add', array('tsmau_number', 5)),
+			array('config.add', array('tsmaf_enable', 1)),
 			array('config.add', array('ts_jsscroll_direction', 1)),
 			array('config.add', array('ts_jsscroll_pause', 1)),
 			array('config.add', array('ts_jsscroll_navigation', 1)),

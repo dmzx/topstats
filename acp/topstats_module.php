@@ -23,7 +23,7 @@ class topstats_module
 		$this->tpl_name = 'acp_topstats';
 		$this->page_title = $user->lang['TS_CONFIG'];
 		add_form_key('acp_topstats');
-		
+
 		$submit = $request->is_set_post('submit');
 		if ($submit)
 		{
@@ -52,7 +52,7 @@ class topstats_module
 			$config->set('tslvb_number', $request->variable('tslvb_number', 5));
 			$config->set('tslru_enable', $request->variable('tslru_enable', 1));
 			$config->set('tslru_number', $request->variable('tslru_number', 5));
-			
+
 			$cache->purge('_ts_most_active_users', '_ts_last_visited_bots', '_ts_last_registered_users');
 
 			trigger_error($user->lang['TOPSTATS_SAVED'] . adm_back_link($this->u_action));
