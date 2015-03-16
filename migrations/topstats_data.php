@@ -37,7 +37,7 @@ class topstats_data extends \phpbb\db\migration\migration
 			array('config.add', array('tslvb_number', 5)),
 			array('config.add', array('tslru_enable', 1)),
 			array('config.add', array('tslru_number', 5)),
-			array('config.add', array('ts_version', '1.0.0')),
+			array('config.add', array('ts_version', '1.0.1')),
 		);
 	}
 }

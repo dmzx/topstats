@@ -8,16 +8,85 @@
 */
 
 #vertical-ticker{
-	position:relative;	
-	height: 123px;
-	overflow: hidden;
+   position:relative;   
+   height: 123px;
+   overflow: hidden;
 }
 
 #vertical-ticker li{
-	display: block;
+   display: block;
 }
 
 #news{
-	height: 41px;
-	overflow: hidden;
+   height: 41px;
+   overflow: hidden;
+}
+
+dl.starimg {
+   background-image: url("./images/starimg.png");
+   background-repeat: no-repeat;
+}
+
+.tsticker {
+   position: relative;
+   float: right;
+   padding-right: 10px;
+   margin-top: -21px;
+   height:17px;
+}
+
+.stats_left {
+   padding-right: 2px;
+   width: 50%;
+   vertical-align: top;   
+}
+
+.stats_right {
+   padding-left: 2px;
+   width: 50%;
+   vertical-align: top;   
+}
+
+a.stats_topic_title {
+   font-size: 1.1em;
+   padding-left: 6px;
+   font-weight: bold;
+}
+
+span.stats_name {
+   float: left;
+   padding-left: 6px;
+   font-size: 1.1em;
+   font-weight: bold;   
+}
+
+span.stats_author {
+   padding-left: 6px;
+}
+
+span.stats_info {
+   float: right;
+   width: 120px;
+   text-align: center;
+   font-size:1.1em;   
+}
+
+span.stats_date {
+   float: right;
+   width: 220px;
+   text-align: center;
+   font-size:1.1em;   
+}
+
+@media only screen and (max-width: 550px), only screen and (max-device-width: 550px) {
+   span.stats_name {
+      width: 100%;
+      text-align: center;
+   }
+   span.stats_info {
+      display: none;
+   }
+   span.stats_date {
+      display: none;
+   }
 }
