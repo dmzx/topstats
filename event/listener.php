@@ -23,7 +23,7 @@ class listener implements EventSubscriberInterface
 	static public function getSubscribedEvents()
 	{
 		return array(
-			'core.user_setup'   => 'load_language_on_setup',
+			'core.user_setup'	=> 'load_language_on_setup',
 			'core.page_header'	=> 'add_page_header_link',
 		);
 	}
@@ -98,7 +98,7 @@ class listener implements EventSubscriberInterface
 	$enable_active_topics = (!empty($this->config['tsrat_enable']) ? true : false);
 	if ($enable_active_topics && sizeof($flist))
 	{
-	$sql = 'SELECT t.forum_id, t.topic_id, t.topic_title, t.topic_time, t.topic_views, t.topic_poster,  t.topic_posts_approved, t.topic_first_poster_name, t.topic_first_poster_colour, t.topic_last_post_id, t.topic_last_poster_name, t.topic_last_poster_colour, t.topic_last_post_time, t.topic_last_view_time, t.topic_last_poster_id, f.forum_name, f.forum_image
+	$sql = 'SELECT t.forum_id, t.topic_id, t.topic_title, t.topic_time, t.topic_views, t.topic_poster,	t.topic_posts_approved, t.topic_first_poster_name, t.topic_first_poster_colour, t.topic_last_post_id, t.topic_last_poster_name, t.topic_last_poster_colour, t.topic_last_post_time, t.topic_last_view_time, t.topic_last_poster_id, f.forum_name, f.forum_image
 		FROM ' . TOPICS_TABLE . ' t
 		LEFT JOIN ' . FORUMS_TABLE . ' f ON (t.forum_id = f.forum_id)
 		WHERE ' . $this->db->sql_in_set('t.forum_id', $flist) . ' AND t.topic_moved_id = 0
@@ -144,8 +144,8 @@ class listener implements EventSubscriberInterface
 		'TS_JSSCROLL_DIRECTION'			=> (!empty($this->config['ts_jsscroll_direction'])) ? true : false,
 		'TS_JSSCROLL_PAUSE'				=> (!empty($this->config['ts_jsscroll_pause'])) ? true : false,
 		'TS_JSSCROLL_NAVIGATION'		=> (!empty($this->config['ts_jsscroll_navigation'])) ? true : false,
-		'S_TSRAT_ENABLE'	  			=> (!empty($this->config['tsrat_enable'])) ? true : false,
-		'S_TS_JSSCROLL'	  			=> (isset($this->config['ts_jsscroll'])) ? $this->config['ts_jsscroll'] : '',
+		'S_TSRAT_ENABLE'					=> (!empty($this->config['tsrat_enable'])) ? true : false,
+		'S_TS_JSSCROLL'					=> (isset($this->config['ts_jsscroll'])) ? $this->config['ts_jsscroll'] : '',
 		'S_TS_TICKER' 		 			=> (!empty($this->config['ts_ticker_enable'])) ? true : false,
 	));
 
@@ -188,15 +188,15 @@ class listener implements EventSubscriberInterface
 	$this->db->sql_freeresult($result);
 
 	$this->template->assign_vars(array(
-		'S_TSMVT_ENABLE'	  			=> $enable_viewed_topics,
+		'S_TSMVT_ENABLE'					=> $enable_viewed_topics,
 		'TSMVT_NUMBER'					=> (isset($this->config['tsmvt_number'])) ? $this->config['tsmvt_number'] : '',
 	));
-   }
+	}
 
 	// Most replied topics
 	$enable_replied_topics = (!empty($this->config['tsmrt_enable']) ? true : false);
 	if ($enable_replied_topics && sizeof($flist))
-   {
+	{
 	$sql = 'SELECT topic_id, forum_id, topic_title, topic_posts_approved, topic_time, topic_first_poster_name, topic_first_poster_colour, topic_poster, topic_last_poster_id
 		FROM ' . TOPICS_TABLE . ' WHERE ' . $this->db->sql_in_set('forum_id', $flist) . '
 		ORDER BY topic_posts_approved DESC';
@@ -232,7 +232,7 @@ class listener implements EventSubscriberInterface
 	$this->db->sql_freeresult($result);
 
 	$this->template->assign_vars(array(
-		'S_TSMRT_ENABLE'	  			=> $enable_replied_topics,
+		'S_TSMRT_ENABLE'					=> $enable_replied_topics,
 		'TSMRT_NUMBER'					=> (isset($this->config['tsmrt_number'])) ? $this->config['tsmrt_number'] : '',
 	));
 	}
@@ -240,7 +240,7 @@ class listener implements EventSubscriberInterface
 	// Most active users
 	$enable_active_users = (!empty($this->config['tsmau_enable']) ? true : false);
 	if ($enable_active_users)
-   {
+	{
 	if (($active_users = $this->cache->get('_ts_most_active_users')) === false)
 	{
 		$sql = 'SELECT user_id, username, user_posts, user_colour, user_regdate
@@ -282,15 +282,15 @@ class listener implements EventSubscriberInterface
 	$this->db->sql_freeresult($result);
 
 	$this->template->assign_vars(array(
-		'S_TSMAU_ENABLE'	  			=> $enable_active_users,
+		'S_TSMAU_ENABLE'					=> $enable_active_users,
 		'TSMAU_NUMBER'					=> (isset($this->config['tsmau_number'])) ? $this->config['tsmau_number'] : '',
 	));
 	}
 
-   // Most active forums
-   $enable_active_forums = (!empty($this->config['tsmaf_enable']) ? true : false);
-   if ($enable_active_forums && sizeof($flist))
-   {
+	// Most active forums
+	$enable_active_forums = (!empty($this->config['tsmaf_enable']) ? true : false);
+	if ($enable_active_forums && sizeof($flist))
+	{
 	$sql = 'SELECT forum_id, forum_name, forum_topics_approved
 		FROM ' . FORUMS_TABLE . ' WHERE ' . $this->db->sql_in_set('forum_id', $flist) . ' AND forum_type = ' . FORUM_POST . '
 		ORDER BY forum_topics_approved DESC';
@@ -321,14 +321,14 @@ class listener implements EventSubscriberInterface
 	$this->db->sql_freeresult($result);
 
 	$this->template->assign_vars(array(
-		'S_TSMAF_ENABLE'	  			=> $enable_active_forums,
+		'S_TSMAF_ENABLE'					=> $enable_active_forums,
 		'TSMAF_NUMBER'					=> (isset($this->config['tsmaf_number'])) ? $this->config['tsmaf_number'] : '',
 	));
-   }
+	}
 
-   // Last visited Bots
-   if (!empty($this->config['tslvb_enable']))
-   {
+	// Last visited Bots
+	if (!empty($this->config['tslvb_enable']))
+	{
 	if ( ( $last_bots = $this->cache->get('_ts_last_visited_bots') ) === false )
 	{
 		$sql = 'SELECT user_id, username, user_lastvisit, user_colour
@@ -354,13 +354,13 @@ class listener implements EventSubscriberInterface
 		$this->template->assign_block_vars('last_visited_bots', array(
 			'USERNAME'						=> $row['username'],
 			'USER_COLOUR'					=> $row['user_colour'],
-			'USER_LAST_VISIT'			   => $this->user->format_date($row['user_lastvisit']),
+			'USER_LAST_VISIT'				=> $this->user->format_date($row['user_lastvisit']),
 		));
 	}
 	$this->db->sql_freeresult($result);
 
 	$this->template->assign_vars(array(
-		'S_TSLVB_ENABLE'	  			=> $this->config['tslvb_enable'],
+		'S_TSLVB_ENABLE'					=> $this->config['tslvb_enable'],
 		'TSLVB_NUMBER'					=> $this->config['tslvb_number'],
 	));
 	}
@@ -395,10 +395,10 @@ class listener implements EventSubscriberInterface
 		$last_registered_user = append_sid("{$this->phpbb_root_path}memberlist.$this->phpEx", 'mode=viewprofile' . '&amp;u=' . $row['user_id']);
 
 		$this->template->assign_block_vars('last_registered_user', array(
-			'USER_URL'				  => $last_registered_user,
-			'USERNAME'				  => $row['username'],
-			'USER_COLOUR'			   => $row['user_colour'],
-			'USER_REGISTERED'		   => $this->user->format_date($row['user_regdate']),
+			'USER_URL'					=> $last_registered_user,
+			'USERNAME'					=> $row['username'],
+			'USER_COLOUR'				=> $row['user_colour'],
+			'USER_REGISTERED'			=> $this->user->format_date($row['user_regdate']),
 		));
 	}
 
@@ -406,7 +406,7 @@ class listener implements EventSubscriberInterface
 		'S_TSLRU_ENABLE'				=> $enable_last_users,
 		'TSLRU_NUMBER'					=> (isset($this->config['tslru_number'])) ? $this->config['tslru_number'] : '',
 	));
-   }
-  }
+	}
+	}
  }
 }

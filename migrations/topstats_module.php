@@ -19,7 +19,7 @@ class topstats_module extends \phpbb\db\migration\migration
 			array('module.add', array('acp', 'ACP_CAT_DOT_MODS', 'TOP_STATS')),
 			array('module.add', array(
 			'acp', 'TOP_STATS', array(
-			'module_basename'	=> '\dmzx\topstats\acp\topstats_module', 'modes'	  => array('configuration'),
+			'module_basename'	=> '\dmzx\topstats\acp\topstats_module', 'modes'		=> array('configuration'),
 			),
 			)),
 		);

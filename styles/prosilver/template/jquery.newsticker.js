@@ -17,9 +17,9 @@
  * A basic news ticker.
  *
  * @name	 newsticker (or newsTicker)
- * @param	delay	  Delay (in milliseconds) between iterations. Default 4 seconds (4000ms)
- * @author   Sam Collett (http://www.texotela.co.uk)
- * @example  $("#news").newsticker(); // or $("#news").newsTicker(5000);
+ * @param	delay		Delay (in milliseconds) between iterations. Default 4 seconds (4000ms)
+ * @author	Sam Collett (http://www.texotela.co.uk)
+ * @example	$("#news").newsticker(); // or $("#news").newsTicker(5000);
  *
  */
 $.fn.newsTicker = $.fn.newsticker = function(delay)

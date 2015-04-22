@@ -1,15 +1,15 @@
 <div class="forumlist">
-   <div class="forabg">
-	  <div class="inner">
+	<div class="forabg">
+		<div class="inner">
 		 <ul class="topiclist">
-		   <li class="header">
+			<li class="header">
 			 <dl class="icon">
-			   <dt>{TSRAT_NUMBER} {L_RECENT_ACTIVE}</dt>
-			   <dd class="topics">{L_REPLIES}</dd>
-			   <dd class="posts">{L_VIEWS}</dd>
-			   <dd class="lastpost"><span>{L_LAST_POST}</span></dd>
+				<dt>{TSRAT_NUMBER} {L_RECENT_ACTIVE}</dt>
+				<dd class="topics">{L_REPLIES}</dd>
+				<dd class="posts">{L_VIEWS}</dd>
+				<dd class="lastpost"><span>{L_LAST_POST}</span></dd>
 			 </dl>
-		   </li>
+			</li>
 		 </ul>
 		 <!-- IF S_TS_JSSCROLL and TS_JSSCROLL_NAVIGATION and not S_TS_TICKER -->
 		 <div class="tsticker"><a href="#" title="Previous" id="ticker-previous"><img src="ext/dmzx/topstats/styles/prosilver/theme/images/player_rew.png" alt="Previous" height="16" width="16"></a>
@@ -20,43 +20,43 @@
 		 <!-- ENDIF -->
 		 <ul <!-- IF S_TS_JSSCROLL and not S_TS_TICKER -->id="vertical-ticker" <!-- ELSEIF S_TS_TICKER and not S_TS_JSSCROLL -->id="news" <!-- ENDIF -->class="topiclist forums">
 		 <!-- IF S_TS_JSSCROLL or not S_TS_TICKER -->
-		   <!-- BEGIN recent_active -->
-		   <li class="row">
-			  <dl class="icon starimg">
+			<!-- BEGIN recent_active -->
+			<li class="row">
+				<dl class="icon starimg">
 				 <dt>
 				 <div class="list-inner">
-				   <a href="{recent_active.U_FIRST_TOPIC}" class="forumtitle">{recent_active.TOPIC_TITLE}</a><br />
-				   {L_POST_BY_AUTHOR} <a style="font-weight:bold; color: #{recent_active.TOPIC_FIRST_POSTER_COLOUR};" href="{recent_active.USERNAME_FIRST}">{recent_active.TOPIC_FIRST_POSTER_NAME}</a> {L_IN} <a href="{recent_active.FORUM_URL}">{recent_active.FORUM_NAME}</a> {recent_active.TOPIC_TIME}
+					<a href="{recent_active.U_FIRST_TOPIC}" class="forumtitle">{recent_active.TOPIC_TITLE}</a><br />
+					{L_POST_BY_AUTHOR} <a style="font-weight:bold; color: #{recent_active.TOPIC_FIRST_POSTER_COLOUR};" href="{recent_active.USERNAME_FIRST}">{recent_active.TOPIC_FIRST_POSTER_NAME}</a> {L_IN} <a href="{recent_active.FORUM_URL}">{recent_active.FORUM_NAME}</a> {recent_active.TOPIC_TIME}
 				 </div>
 				 </dt>
 				 <dd class="topics">{recent_active.TOPIC_REPLIES}</dd>
 				 <dd class="posts">{recent_active.TOPIC_VIEWS}</dd>
 				 <dd class="lastpost"><span>
-				   {L_POST_BY_AUTHOR} <a style="font-weight:bold; color: #{recent_active.TOPIC_LAST_POSTER_COLOUR};" href="{recent_active.USERNAME_LAST}">{recent_active.TOPIC_LAST_POSTER_NAME}</a> <a href="{recent_active.U_LAST_TOPIC}">{LAST_POST_IMG}</a><br />{recent_active.TOPIC_LAST_POST_TIME}</span>
+					{L_POST_BY_AUTHOR} <a style="font-weight:bold; color: #{recent_active.TOPIC_LAST_POSTER_COLOUR};" href="{recent_active.USERNAME_LAST}">{recent_active.TOPIC_LAST_POSTER_NAME}</a> <a href="{recent_active.U_LAST_TOPIC}">{LAST_POST_IMG}</a><br />{recent_active.TOPIC_LAST_POST_TIME}</span>
 				 </dd>
-			  </dl>
-		   </li>
-		   <!-- END recent_active -->
+				</dl>
+			</li>
+			<!-- END recent_active -->
 		 <!-- ELSEIF S_TS_TICKER -->
-		   <li class="row">
-		   <!-- BEGIN recent_active -->
-			  <dl class="icon starimg">
+			<li class="row">
+			<!-- BEGIN recent_active -->
+				<dl class="icon starimg">
 				 <dt>
 				 <div class="list-inner">
-				   <a href="{recent_active.U_FIRST_TOPIC}" class="forumtitle">{recent_active.TOPIC_TITLE}</a><br />
-				   {L_POST_BY_AUTHOR} <a style="font-weight:bold; color: #{recent_active.TOPIC_FIRST_POSTER_COLOUR};" href="{recent_active.USERNAME_FIRST}">{recent_active.TOPIC_FIRST_POSTER_NAME}</a> {L_IN} <a href="{recent_active.FORUM_URL}">{recent_active.FORUM_NAME}</a> {recent_active.TOPIC_TIME}
+					<a href="{recent_active.U_FIRST_TOPIC}" class="forumtitle">{recent_active.TOPIC_TITLE}</a><br />
+					{L_POST_BY_AUTHOR} <a style="font-weight:bold; color: #{recent_active.TOPIC_FIRST_POSTER_COLOUR};" href="{recent_active.USERNAME_FIRST}">{recent_active.TOPIC_FIRST_POSTER_NAME}</a> {L_IN} <a href="{recent_active.FORUM_URL}">{recent_active.FORUM_NAME}</a> {recent_active.TOPIC_TIME}
 				 </div>
 				 </dt>
 				 <dd class="topics">{recent_active.TOPIC_REPLIES}</dd>
 				 <dd class="posts">{recent_active.TOPIC_VIEWS}</dd>
 				 <dd class="lastpost"><span>
-				   {L_POST_BY_AUTHOR} <a style="font-weight:bold; color: #{recent_active.TOPIC_LAST_POSTER_COLOUR};" href="{recent_active.USERNAME_LAST}">{recent_active.TOPIC_LAST_POSTER_NAME}</a> <a href="{recent_active.U_LAST_TOPIC}">{LAST_POST_IMG}</a><br />{recent_active.TOPIC_LAST_POST_TIME}</span>
+					{L_POST_BY_AUTHOR} <a style="font-weight:bold; color: #{recent_active.TOPIC_LAST_POSTER_COLOUR};" href="{recent_active.USERNAME_LAST}">{recent_active.TOPIC_LAST_POSTER_NAME}</a> <a href="{recent_active.U_LAST_TOPIC}">{LAST_POST_IMG}</a><br />{recent_active.TOPIC_LAST_POST_TIME}</span>
 				 </dd>
-			  </dl>
-		   <!-- END recent_active -->
-		   </li>
+				</dl>
+			<!-- END recent_active -->
+			</li>
 		 <!-- ENDIF -->
 		 </ul>
-	  </div>
-   </div>
+		</div>
+	</div>
 </div>
