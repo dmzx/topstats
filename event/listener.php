@@ -20,7 +20,6 @@ use Symfony\Component\EventDispatcher\EventSubscriberInterface;
 */
 class listener implements EventSubscriberInterface
 {
-
 	static public function getSubscribedEvents()
 	{
 		return array(
@@ -61,8 +60,7 @@ class listener implements EventSubscriberInterface
 	* @param \phpbb\template\template	$this->template
 	* @param \phpbb\user				$this->user
 	*/
-	public function __construct(\phpbb\config\config $config, \phpbb\controller\helper $helper, \phpbb\template\template $template, \phpbb\user $user, \phpbb\auth\auth $auth, \phpbb\db\driver\driver_interface $db, \phpbb\cache\service $cache, $phpbb_root_path, $phpEx,
-	\phpbb\collapsiblecategories\operator\operator $operator = null )
+	public function __construct(\phpbb\config\config $config, \phpbb\controller\helper $helper, \phpbb\template\template $template, \phpbb\user $user, \phpbb\auth\auth $auth, \phpbb\db\driver\driver_interface $db, \phpbb\cache\service $cache, $phpbb_root_path, $phpEx)
 	{
 		$this->config = $config;
 		$this->helper = $helper;
@@ -73,7 +71,6 @@ class listener implements EventSubscriberInterface
 		$this->cache = $cache;
 		$this->phpbb_root_path = $phpbb_root_path;
 		$this->phpEx = $phpEx;
-		$this->operator = $operator;
 	}
 
 	public function load_language_on_setup($event)
@@ -88,17 +85,6 @@ class listener implements EventSubscriberInterface
 
 	public function add_page_header_link($event)
 	{
-
-	if ($this->operator !== null)
-	{
-	$fid = 'fid_1228'; // can be any unique string to identify your extension's collapsible element
-	$this->template->assign_vars(array(
-		'S_FORUM_HIDDEN' => in_array($fid, $this->operator->get_user_categories()),
-		'U_COLLAPSE_URL' => $this->helper->route('phpbb_collapsiblecategories_main_controller', array(
-			'forum_id' => $fid,
-			'hash' => generate_link_hash("collapsible_$fid")))
-	));
-	}
 
 	if (!defined('INCLUDES_FUNCTIONS_TOP_STATS_PHP'))
 	{

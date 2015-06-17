@@ -1,33 +1,24 @@
 <!-- IF S_TSMVT_ENABLE or S_TSMRT_ENABLE -->
-<table style="width:100%;">
+<table cellpadding="0" cellspacing="0" border="0" width="100%">
 	<tr>
 	<!-- IF S_TSMVT_ENABLE -->
 		<td<!-- IF S_TSMRT_ENABLE --> class="stats_left"<!-- ENDIF -->>
-		<a class="category<!-- IF S_FORUM_HIDDEN --> hidden-category<!-- ENDIF -->"
-	style="display: none; height: 0"></a>
 		 <div class="forabg">
 			<div class="inner">
 				<ul class="topiclist">
 					<li class="header">
 					 <dl>
-						<dt class="stats_title">{TSMVT_NUMBER} {L_MOST_VIEWED}</dt>
-						<dd><span class="stats_info responsive-hide" style="position:absolute;left:79%;">{L_VIEWS}</span></dd>
+						<dt class="stats_title">{TSMVT_NUMBER} {L_MOST_VIEWED}
+						<span class="stats_info responsive-hide">{L_VIEWS}</span></dt>
 					 </dl>
-					 <a href="{U_COLLAPSE_URL}"
-	class="collapse-btn collapse-<!-- IF S_FORUM_HIDDEN -->show<!-- ELSE -->hide<!-- ENDIF -->"
-	data-hidden="{S_FORUM_HIDDEN}"
-	data-ajax="phpbb_collapse"
-	data-overlay="true"
-	title="{L_COLLAPSIBLE_CATEGORIES_TITLE}"
-	style=""></a>
 					</li>
 				</ul>
 				<ul class="topiclist forums">
 				<!-- BEGIN most_viewed -->
 					<li class="row">
 					 <dl>
-						<dt class="stats_title"><a class="stats_topic_title" href="{most_viewed.U_FIRST_TOPIC}">{most_viewed.TOPIC_TITLE}</a><br /><span class="stats_author">{L_POST_BY_AUTHOR} <a style="font-weight:bold; color: #{most_viewed.TOPIC_FIRST_POSTER_COLOUR};" href="{most_viewed.USERNAME_FIRST}">{most_viewed.TOPIC_FIRST_POSTER_NAME}</a> {L_POSTED_ON_DATE} {most_viewed.TOPIC_TIME}</span></dt>
-						<dd><span style="position:absolute;left:89%;">{most_viewed.TOPIC_VIEWS}</span></dd>
+						<dt class="stats_title"><a class="stats_topic_title" href="{most_viewed.U_FIRST_TOPIC}">{most_viewed.TOPIC_TITLE}</a><br /><span class="stats_author">{L_POST_BY_AUTHOR} <a style="font-weight:bold; color: #{most_viewed.TOPIC_FIRST_POSTER_COLOUR};" href="{most_viewed.USERNAME_FIRST}">{most_viewed.TOPIC_FIRST_POSTER_NAME}</a> {L_POSTED_ON_DATE} {most_viewed.TOPIC_TIME}</span>
+						<span class="stats_info responsive-hide">{most_viewed.TOPIC_VIEWS}</span></dt>
 					 </dl>
 					</li>
 				<!-- END most_viewed -->
@@ -38,31 +29,22 @@
 	<!-- ENDIF -->
 	<!-- IF S_TSMRT_ENABLE -->
 		<td<!-- IF S_TSMVT_ENABLE --> class="stats_right"<!-- ENDIF -->>
-		<a class="category<!-- IF S_FORUM_HIDDEN --> hidden-category<!-- ENDIF -->"
-	style="display: none; height: 0"></a>
 		 <div class="forabg">
 			<div class="inner">
 				<ul class="topiclist">
 					<li class="header">
 					 <dl>
-						<dt class="stats_title">{TSMRT_NUMBER} {L_MOST_REPLIED}</dt>
-						<dd><span class="stats_info responsive-hide" style="position:absolute;left:79%;">{L_REPLIES}</span></dd>
+						<dt class="stats_title">{TSMRT_NUMBER} {L_MOST_REPLIED}
+						<span class="stats_info responsive-hide">{L_REPLIES}</span></dt>
 					 </dl>
-					 <a href="{U_COLLAPSE_URL}"
-	class="collapse-btn collapse-<!-- IF S_FORUM_HIDDEN -->show<!-- ELSE -->hide<!-- ENDIF -->"
-	data-hidden="{S_FORUM_HIDDEN}"
-	data-ajax="phpbb_collapse"
-	data-overlay="true"
-	title="{L_COLLAPSIBLE_CATEGORIES_TITLE}"
-	style=""></a>
 					</li>
 				</ul>
 				<ul class="topiclist forums">
 				<!-- BEGIN most_replied -->
 					<li class="row">
 					 <dl>
-						<dt class="stats_title"><a class="stats_topic_title" href="{most_replied.U_FIRST_TOPIC}">{most_replied.TOPIC_TITLE}</a><br /><span class="stats_author">{L_POST_BY_AUTHOR} <a style="font-weight:bold; color: #{most_replied.TOPIC_FIRST_POSTER_COLOUR};" href="{most_replied.USERNAME_FIRST}">{most_replied.TOPIC_FIRST_POSTER_NAME}</a> {L_POSTED_ON_DATE} {most_replied.TOPIC_TIME}</span></dt>
-						<dd><span class="stats_info responsive-hide" style="position:absolute;left:79%;">{most_replied.TOPIC_REPLIES}</span></dd>
+						<dt class="stats_title"><a class="stats_topic_title" href="{most_replied.U_FIRST_TOPIC}">{most_replied.TOPIC_TITLE}</a><br /><span class="stats_author">{L_POST_BY_AUTHOR} <a style="font-weight:bold; color: #{most_replied.TOPIC_FIRST_POSTER_COLOUR};" href="{most_replied.USERNAME_FIRST}">{most_replied.TOPIC_FIRST_POSTER_NAME}</a> {L_POSTED_ON_DATE} {most_replied.TOPIC_TIME}</span>
+						<span class="stats_info responsive-hide">{most_replied.TOPIC_REPLIES}</span></dt>
 					 </dl>
 					</li>
 				<!-- END most_replied -->
@@ -76,35 +58,26 @@
 <!-- ENDIF -->
 
 <!-- IF S_TSMAU_ENABLE or S_TSMAF_ENABLE -->
-<table style="width:100%;">
+<table cellpadding="0" cellspacing="0" border="0" width="100%">
 	<tr>
 	<!-- IF S_TSMAU_ENABLE -->
 		<td<!-- IF S_TSMAF_ENABLE --> class="stats_left"<!-- ENDIF -->>
-		<a class="category<!-- IF S_FORUM_HIDDEN --> hidden-category<!-- ENDIF -->"
-	style="display: none; height: 0"></a>
 		 <div class="forabg">
 			<div class="inner">
 				<ul class="topiclist">
 					<li class="header">
 					 <dl>
-						<dt class="stats_title">{TSMAU_NUMBER} {L_MOST_ACTIVE_USERS}</dt>
-						 <dd><span class="stats_info responsive-hide" style="position:absolute;left:79%;">{L_POSTS}</span></dd>
+						<dt class="stats_title">{TSMAU_NUMBER} {L_MOST_ACTIVE_USERS}
+						<span class="stats_info responsive-hide">{L_POSTS}</span></dt>
 					 </dl>
-					 <a href="{U_COLLAPSE_URL}"
-	class="collapse-btn collapse-<!-- IF S_FORUM_HIDDEN -->show<!-- ELSE -->hide<!-- ENDIF -->"
-	data-hidden="{S_FORUM_HIDDEN}"
-	data-ajax="phpbb_collapse"
-	data-overlay="true"
-	title="{L_COLLAPSIBLE_CATEGORIES_TITLE}"
-	style=""></a>
 					</li>
 				</ul>
 				<ul class="topiclist forums">
 				<!-- BEGIN most_active_users -->
 					<li class="row">
 					 <dl>
-						<dt class="stats_title"><span class="stats_name"><a style="color: #{most_active_users.USER_COLOUR};" href="{most_active_users.USER_ID}" title="{L_JOINED_US} {most_active_users.USER_REG}">{most_active_users.USERNAME}</a></span></dt>
-						<dd><span class="stats_info responsive-hide" style="position:absolute;left:79%;"><a href="{most_active_users.USER_POST_SEARCH}">{most_active_users.USER_POSTS}</a> ({most_active_users.USER_POST_PERCENT}%)</span></dd>
+						<dt class="stats_title"><span class="stats_name"><a style="color: #{most_active_users.USER_COLOUR};" href="{most_active_users.USER_ID}" title="{L_JOINED_US} {most_active_users.USER_REG}">{most_active_users.USERNAME}</a></span>
+						<span class="stats_info"><a href="{most_active_users.USER_POST_SEARCH}">{most_active_users.USER_POSTS}</a> ({most_active_users.USER_POST_PERCENT}%)</span></dt>
 					 </dl>
 					</li>
 				<!-- END most_active_users -->
@@ -115,31 +88,22 @@
 	<!-- ENDIF -->
 	<!-- IF S_TSMAF_ENABLE -->
 		<td<!-- IF S_TSMAU_ENABLE --> class="stats_right"<!-- ENDIF -->>
-		<a class="category<!-- IF S_FORUM_HIDDEN --> hidden-category<!-- ENDIF -->"
-	style="display: none; height: 0"></a>
 		 <div class="forabg">
 			<div class="inner">
 				<ul class="topiclist">
 					<li class="header">
 					 <dl>
-						<dt class="stats_title">{TSMAF_NUMBER} {L_MOST_ACTIVE_FORUMS}</dt>
-						<dd><span class="stats_info responsive-hide" style="position:absolute;left:79%;">{L_POSTS}</span></dd>
+						<dt class="stats_title">{TSMAF_NUMBER} {L_MOST_ACTIVE_FORUMS}
+						<span class="stats_info responsive-hide">{L_POSTS}</span></dt>
 					 </dl>
-					 <a href="{U_COLLAPSE_URL}"
-	class="collapse-btn collapse-<!-- IF S_FORUM_HIDDEN -->show<!-- ELSE -->hide<!-- ENDIF -->"
-	data-hidden="{S_FORUM_HIDDEN}"
-	data-ajax="phpbb_collapse"
-	data-overlay="true"
-	title="{L_COLLAPSIBLE_CATEGORIES_TITLE}"
-	style=""></a>
 					</li>
 				</ul>
 				<ul class="topiclist forums">
 				<!-- BEGIN most_active_forums -->
 					<li class="row">
 					 <dl>
-						<dt class="stats_title"><span class="stats_name"><a href="{most_active_forums.FORUM_URL}">{most_active_forums.FORUM_NAME}</a></span></dt>
-						<dd><span class="stats_info responsive-hide" style="position:absolute;left:79%;">{most_active_forums.FORUM_POSTS} ({most_active_forums.FORUM_POSTS_PERCENT}%)</span></dd>
+						<dt class="stats_title"><span class="stats_name"><a href="{most_active_forums.FORUM_URL}">{most_active_forums.FORUM_NAME}</a></span>
+						<span class="stats_info">{most_active_forums.FORUM_POSTS} ({most_active_forums.FORUM_POSTS_PERCENT}%)</span></dt>
 					 </dl>
 					</li>
 				<!-- END most_active_forums -->
@@ -153,35 +117,26 @@
 <!-- ENDIF -->
 
 <!-- IF S_TSLVB_ENABLE or S_TSLRU_ENABLE -->
-<table style="width:100%;">
+<table cellpadding="0" cellspacing="0" border="0" width="100%">
 	<tr>
 	<!-- IF S_TSLVB_ENABLE -->
 		<td<!-- IF S_TSLVB_ENABLE --> class="stats_left"<!-- ENDIF -->>
-		<a class="category<!-- IF S_FORUM_HIDDEN --> hidden-category<!-- ENDIF -->"
-	style="display: none; height: 0"></a>
 		 <div class="forabg">
 			<div class="inner">
 				<ul class="topiclist">
 					<li class="header">
 					 <dl>
-						<dt class="stats_title">{TSLVB_NUMBER} {L_LAST_VISITED_BOTS}</dt>
-						<dd><span class="stats_info responsive-hide" style="position:absolute;left:79%;">{L_TIME}</span></dd>
+						<dt class="stats_title">{TSLVB_NUMBER} {L_LAST_VISITED_BOTS}
+						<span class="stats_info responsive-hide">{L_TIME}</span></dt>
 					 </dl>
-					 <a href="{U_COLLAPSE_URL}"
-	class="collapse-btn collapse-<!-- IF S_FORUM_HIDDEN -->show<!-- ELSE -->hide<!-- ENDIF -->"
-	data-hidden="{S_FORUM_HIDDEN}"
-	data-ajax="phpbb_collapse"
-	data-overlay="true"
-	title="{L_COLLAPSIBLE_CATEGORIES_TITLE}"
-	style=""></a>
 					</li>
 				</ul>
 				<ul class="topiclist forums">
 				<!-- BEGIN last_visited_bots -->
 					<li class="row">
 					 <dl>
-						<dt class="stats_title"><span class="stats_name" style="color: #{last_visited_bots.USER_COLOUR};">{last_visited_bots.USERNAME}</span></dt>
-						<dd><span class="stats_info responsive-hide" style="position:absolute;left:78%;">{last_visited_bots.USER_LAST_VISIT}</span></dd>
+						<dt class="stats_title"><span class="stats_name" style="color: #{last_visited_bots.USER_COLOUR};">{last_visited_bots.USERNAME}</span>
+						<span class="stats_info">{last_visited_bots.USER_LAST_VISIT}</span></dt>
 					 </dl>
 					</li>
 				<!-- END last_visited_bots -->
@@ -192,31 +147,22 @@
 	<!-- ENDIF -->
 	<!-- IF S_TSLRU_ENABLE -->
 		<td<!-- IF S_TSLRU_ENABLE --> class="stats_right"<!-- ENDIF -->>
-		<a class="category<!-- IF S_FORUM_HIDDEN --> hidden-category<!-- ENDIF -->"
-	style="display: none; height: 0"></a>
 		 <div class="forabg">
 			<div class="inner">
 				<ul class="topiclist">
 					<li class="header">
 					 <dl>
-						<dt class="stats_title">{TSLRU_NUMBER} {L_LAST_REGISTERED_USERS}</dt>
-						<dd><span class="stats_info responsive-hide" style="position:absolute;left:70%;">{L_TIME}</span></dd>
+						<dt class="stats_title">{TSLRU_NUMBER} {L_LAST_REGISTERED_USERS}
+						<span class="stats_date responsive-hide">{L_TIME}</span></dt>
 					 </dl>
-					 <a href="{U_COLLAPSE_URL}"
-	class="collapse-btn collapse-<!-- IF S_FORUM_HIDDEN -->show<!-- ELSE -->hide<!-- ENDIF -->"
-	data-hidden="{S_FORUM_HIDDEN}"
-	data-ajax="phpbb_collapse"
-	data-overlay="true"
-	title="{L_COLLAPSIBLE_CATEGORIES_TITLE}"
-	style=""></a>
 					</li>
 				</ul>
 				<ul class="topiclist forums">
 				<!-- BEGIN last_registered_user -->
 					<li class="row">
 					 <dl>
-						<dt class="stats_title"><span class="stats_name"><a style="font-weight:bold; color:#{last_registered_user.USER_COLOUR};" href="{last_registered_user.USER_URL}">{last_registered_user.USERNAME}</a></span></dt>
-						<dd><span class="stats_date responsive-hide" style="position:absolute;left:63%;">{last_registered_user.USER_REGISTERED}</span></dd>
+						<dt class="stats_title"><span class="stats_name"><a style="font-weight:bold; color:#{last_registered_user.USER_COLOUR};" href="{last_registered_user.USER_URL}">{last_registered_user.USERNAME}</a></span>
+						<span class="stats_date">{last_registered_user.USER_REGISTERED}</span></dt>
 					 </dl>
 					</li>
 				<!-- END last_registered_user -->
