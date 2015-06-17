@@ -23,25 +23,14 @@
 }
 
 dl.starimg {
-   background-image: url("./images/announce.png");
+   background-image: url("./images/starimg.png");
    background-repeat: no-repeat;
-   
-}
-
-table {
-    border-collapse: separate;
-    border-spacing: 0px; /* cellspacing */
-    *border-collapse: expression('separate', cellSpacing = '10px');
-}
-
-table td, table th {
-    padding: 0px; /* cellpadding */
 }
 
 .tsticker {
    position: relative;
    float: right;
-   padding-right: 20px;
+   padding-right: 10px;
    margin-top: -21px;
    height:17px;
 }
