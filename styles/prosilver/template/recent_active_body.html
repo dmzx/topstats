@@ -1,5 +1,3 @@
-<a class="category<!-- IF S_FORUM_HIDDEN --> hidden-category<!-- ENDIF -->"
-	style="display: none; height: 0"></a>
 <div class="forumlist">
 	<div class="forabg">
 		<div class="inner">
@@ -11,13 +9,6 @@
 			<dd class="posts">{L_VIEWS}</dd>
 			<dd class="lastpost"><span>{L_LAST_POST}</span></dd>
 			</dl>
-			<a href="{U_COLLAPSE_URL}"
-	class="collapse-btn collapse-<!-- IF S_FORUM_HIDDEN -->show<!-- ELSE -->hide<!-- ENDIF -->"
-	data-hidden="{S_FORUM_HIDDEN}"
-	data-ajax="phpbb_collapse"
-	data-overlay="true"
-	title="{L_COLLAPSIBLE_CATEGORIES_TITLE}"
-	style=""></a>
 		 </li>
 		</ul>
 		<!-- IF S_TS_JSSCROLL and TS_JSSCROLL_NAVIGATION and not S_TS_TICKER -->
@@ -26,13 +17,6 @@
 		 <a href="#" title="Stop" id="stop"><img src="ext/dmzx/topstats/styles/prosilver/theme/images/player_pause.png" alt="Stop" height="16" width="16"></a>
 		 <a href="#" title="Start" id="start"><img src="ext/dmzx/topstats/styles/prosilver/theme/images/player_play.png" alt="Start" height="16" width="16"></a></div>
 		 <!-- IF SCRIPT_NAME eq 'index' --><div class="trigger active"></div><!-- ENDIF -->
-		 <a href="{U_COLLAPSE_URL}"
-	class="collapse-btn collapse-<!-- IF S_FORUM_HIDDEN -->show<!-- ELSE -->hide<!-- ENDIF -->"
-	data-hidden="{S_FORUM_HIDDEN}"
-	data-ajax="phpbb_collapse"
-	data-overlay="true"
-	title="{L_COLLAPSIBLE_CATEGORIES_TITLE}"
-	style=""></a>
 		<!-- ENDIF -->
 		<ul <!-- IF S_TS_JSSCROLL and not S_TS_TICKER -->id="vertical-ticker" <!-- ELSEIF S_TS_TICKER and not S_TS_JSSCROLL -->id="news" <!-- ENDIF -->class="topiclist forums">
 		<!-- IF S_TS_JSSCROLL or not S_TS_TICKER -->
