@@ -11,6 +11,5 @@ services:
             - @cache
             - %core.root_path%
             - %core.php_ext%
-            - @phpbb.collapsiblecategories.operator
         tags:
             - { name: event.listener }                
